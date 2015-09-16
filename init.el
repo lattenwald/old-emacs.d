@@ -6,14 +6,14 @@
 (load custom-file 'noerror)
 
 (defvar packages
-  (quote
-   ;;libraries
-   dash s let-alist button-lock
+  '( ;;libraries
+     dash s let-alist button-lock
 
-   ;; packages
-   ag company company-ghc cperl-mode exec-path-from-shell
-   fixmee flycheck haskell-mode helm helm-ag idomenu
-   projectile smart-tabs-mode smex sunrise-commander)
+     ;; packages
+     ag company company-ghc cperl-mode exec-path-from-shell
+     fixmee flycheck haskell-mode helm helm-ag idomenu
+     projectile smart-tabs-mode smex sunrise-commander
+     )
   "Packages whose location follows the
   packages/package-name/package-name.el format.")
 
