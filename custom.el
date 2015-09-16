@@ -27,7 +27,9 @@
  '(projectile-mode-line (quote (:eval (format " P[%s]" (projectile-project-name)))))
  '(shm-auto-insert-bangs t)
  '(shm-auto-insert-skeletons t)
- '(shm-use-presentation-mode t))
+ '(shm-use-presentation-mode t)
+ '(tab-width 4)
+ '(x-stretch-cursor t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
