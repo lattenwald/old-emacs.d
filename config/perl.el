@@ -7,7 +7,7 @@
                              (smart-tabs-advice cperl-indent-line cperl-indent-level)))
 (add-hook 'cperl-mode-hook 'projectile-mode)
 
-
+(defvaralias 'cperl-indent-level 'tab-width)
 (setq-default cperl-auto-newline-after-colon t)
 (setq-default cperl-close-paren-offset 0)
 (setq-default cperl-continued-statement-offset 4)

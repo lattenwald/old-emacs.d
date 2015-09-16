@@ -6,30 +6,21 @@
 (load custom-file 'noerror)
 
 (defvar packages
-  '(dash
-    s
-    let-alist
-    button-lock
-    ag
-    cperl-mode
-    smex
-    fixmee
-    idomenu
-    smart-tabs-mode
-    sunrise-commander
-    haskell-mode
-    exec-path-from-shell
-    projectile
-    helm
-    helm-ag
-    helm-projectile
-    flycheck)
+  (quote
+   ;;libraries
+   dash s let-alist button-lock
+
+   ;; packages
+   ag company company-ghc cperl-mode exec-path-from-shell
+   fixmee flycheck haskell-mode helm helm-ag idomenu
+   projectile smart-tabs-mode smex sunrise-commander)
   "Packages whose location follows the
   packages/package-name/package-name.el format.")
 
 (defvar custom-load-paths
   '("stack-ide/stack-mode"
-    "magit/lisp")
+    "magit/lisp"
+    "ghc-mod/elisp")
   "Custom load paths that don't follow the normal
   package-name/module-name.el format.")
 
@@ -61,3 +52,4 @@
          do (load (concat (file-name-directory load-file-name)
                           "config/"
                           name ".el")))
+(put 'dired-find-alternate-file 'disabled nil)

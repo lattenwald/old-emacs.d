@@ -37,6 +37,12 @@
 ;;; tabs
 (setq-default indent-tabs-mode nil)
 (autoload 'smart-tabs-mode "smart-tabs-mode")
+(autoload 'smart-tabs-mode-enable "smart-tabs-mode")
+(autoload 'smart-tabs-advice "smart-tabs-mode")
+(autoload 'smart-tabs-insinuate "smart-tabs-mode")
+(add-hook 'smart-tabs-mode (lambda nil
+                             (smart-tabs-insinuate
+                              'c 'javascript 'cperl 'python 'ruby)))
 
 ;;; magit
 (require 'magit)
@@ -52,6 +58,7 @@
 (setq-default delete-selection-mode t)
 (setq-default electric-pair-mode t)
 (setq-default projectile-global-mode t)
+(defvaralias 'c-basic-offset 'tab-width)
 
 ;;; Moving in buffer
 (global-set-key (kbd "<home>") 'beginning-of-line)

@@ -52,3 +52,15 @@
 [submodule "packages/button-lock"]
 	path = packages/button-lock
 	url = git@github.com:rolandwalker/button-lock.git
+[submodule "packages/company-mode"]
+	path = packages/company-mode
+	url = git@github.com:company-mode/company-mode.git
+[submodule "packages/company-ghc"]
+	path = packages/company-ghc
+	url = git@github.com:iquiw/company-ghc.git
+[submodule "packages/company"]
+	path = packages/company
+	url = git@github.com:company-mode/company-mode.git
+[submodule "packages/ghc-mod"]
+	path = packages/ghc-mod
+	url = git@github.com:kazu-yamamoto/ghc-mod.git
