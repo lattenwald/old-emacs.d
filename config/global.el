@@ -47,6 +47,7 @@
 (setq-default cua-enable-cua-keys t)
 (setq-default delete-selection-mode t)
 (setq-default electric-pair-mode t)
+(setq-default projectile-global-mode t)
 
 ;;; Moving in buffer
 (global-set-key (kbd "<home>") 'beginning-of-line)
