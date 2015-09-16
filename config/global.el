@@ -38,6 +38,10 @@
 (setq-default indent-tabs-mode nil)
 (autoload 'smart-tabs-mode "smart-tabs-mode")
 
+;;; magit
+(require 'magit)
+;;; XXX autoloads?
+
 ;;; Misc customizations
 (setq-default cua-mode t)
 (setq-default ido-everywhere t)

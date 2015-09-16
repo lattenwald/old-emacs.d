@@ -49,3 +49,6 @@
 [submodule "packages/stack-ide"]
 	path = packages/stack-ide
 	url = git@github.com:commercialhaskell/stack-ide.git
+[submodule "packages/button-lock"]
+	path = packages/button-lock
+	url = git@github.com:rolandwalker/button-lock.git

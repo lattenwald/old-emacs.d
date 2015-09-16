@@ -9,6 +9,7 @@
   '(dash
     s
     let-alist
+    button-lock
     ag
     cperl-mode
     smex
@@ -41,22 +42,22 @@
 
 ;;; Load packages
 (cl-loop for location in custom-load-paths
-	 do (add-to-list 'load-path
-			 (concat (file-name-directory (or load-file-name
-							  (buffer-file-name)))
-				 "packages/"
-				 location)))
+         do (add-to-list 'load-path
+                         (concat (file-name-directory (or load-file-name
+                                                          (buffer-file-name)))
+                                 "packages/"
+                                 location)))
 (cl-loop for name in packages
-	 do (progn (unless (fboundp name)
-		     (add-to-list 'load-path
-				  (concat (file-name-directory (or load-file-name
-								   (buffer-file-name)))
-					  "packages/"
-					  (symbol-name name)))
-		     (require name))))
+         do (progn (unless (fboundp name)
+                     (add-to-list 'load-path
+                                  (concat (file-name-directory (or load-file-name
+                                                                   (buffer-file-name)))
+                                          "packages/"
+                                          (symbol-name name)))
+                     (require name))))
 
 ;;; Emacs configurations
 (cl-loop for name in configs
-	 do (load (concat (file-name-directory load-file-name)
-			  "config/"
-			  name ".el")))
+         do (load (concat (file-name-directory load-file-name)
+                          "config/"
+                          name ".el")))
