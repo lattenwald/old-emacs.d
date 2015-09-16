@@ -1,0 +1,51 @@
+[submodule "packages/ag"]
+	path = packages/ag
+	url = git@github.com:Wilfred/ag.el.git
+[submodule "packages/dash"]
+	path = packages/dash
+	url = git@github.com:magnars/dash.el.git
+[submodule "packages/s"]
+	path = packages/s
+	url = git@github.com:magnars/s.el.git
+[submodule "packages/fixmee"]
+	path = packages/fixmee
+	url = git@github.com:rolandwalker/fixmee.git
+[submodule "packages/idomenu"]
+	path = packages/idomenu
+	url = git@github.com:birkenfeld/idomenu.git
+[submodule "packages/smart-tabs-mode"]
+	path = packages/smart-tabs-mode
+	url = git@github.com:jcsalomon/smarttabs.git
+[submodule "packages/sunrise-commander"]
+	path = packages/sunrise-commander
+	url = git@github.com:escherdragon/sunrise-commander.git
+[submodule "packages/haskell-mode"]
+	path = packages/haskell-mode
+	url = git@github.com:haskell/haskell-mode.git
+[submodule "packages/exec-path-from-shell"]
+	path = packages/exec-path-from-shell
+	url = git@github.com:purcell/exec-path-from-shell.git
+[submodule "packages/projectile"]
+	path = packages/projectile
+	url = git@github.com:bbatsov/projectile.git
+[submodule "packages/helm"]
+	path = packages/helm
+	url = git@github.com:emacs-helm/helm.git
+[submodule "packages/helm-ag"]
+	path = packages/helm-ag
+	url = git@github.com:syohex/emacs-helm-ag.git
+[submodule "packages/magit"]
+	path = packages/magit
+	url = git@github.com:magit/magit.git
+[submodule "packages/flycheck"]
+	path = packages/flycheck
+	url = git@github.com:flycheck/flycheck.git
+[submodule "packages/let-alist"]
+	path = packages/let-alist
+	url = git@github.com:emacsmirror/let-alist.git
+[submodule "packages/smex"]
+	path = packages/smex
+	url = git@github.com:nonsequitur/smex.git
+[submodule "packages/stack-ide"]
+	path = packages/stack-ide
+	url = git@github.com:commercialhaskell/stack-ide.git
