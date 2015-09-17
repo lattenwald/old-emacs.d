@@ -3,6 +3,19 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(cperl-auto-newline-after-colon t)
+ '(cperl-close-paren-offset 0)
+ '(cperl-continued-statement-offset 4)
+ '(cperl-electric-keywords t)
+ '(cperl-electric-parens-mark nil)
+ '(cperl-electric-parens-string "\"\"")
+ '(cperl-hairy t)
+ '(cperl-highlight-variables-indiscriminately t)
+ '(cperl-indent-parens-as-block t)
+ '(cua-keep-region-after-copy t)
+ '(cua-mode t nil (cua-base))
+ '(cua-remap-control-v t)
+ '(cua-remap-control-z t)
  '(custom-safe-themes
    (quote
     ("73abbe794b6467bbf6a9f04867da0befa604a072b38012039e8c1ba730e5f7a5" "8eaa3bce3c618cd81a318fcf2d28c1cd21278531f028feb53186f6387547dfb4" "a4f8d45297894ffdd98738551505a336a7b3096605b467da83fae00f53b13f01" "af9761c65a81bd14ee3f32bc2ffc966000f57e0c9d31e392bc011504674c07d6" default)))
@@ -26,10 +39,14 @@
  '(haskell-process-type (quote cabal-repl))
  '(haskell-process-use-presentation-mode t)
  '(hindent-style "chris-done")
+ '(ido-buffer-disable-smart-matches nil)
+ '(ido-mode (quote both) nil (ido))
  '(projectile-mode-line (quote (:eval (format " P[%s]" (projectile-project-name)))))
  '(shm-auto-insert-bangs t)
  '(shm-auto-insert-skeletons t)
  '(shm-use-presentation-mode t)
+ '(show-paren-mode t)
+ '(show-paren-style (quote expression))
  '(tab-width 4)
  '(whitespace-style (quote (face trailing space-before-tab empty)))
  '(x-stretch-cursor t))
@@ -38,6 +55,8 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(cperl-array-face ((t (:foreground "#cae682"))))
- '(cperl-hash-face ((t (:foreground "#cae682"))))
- '(fixmee-notice-face ((t (:foreground "yellow" :weight bold)))))
+ '(cperl-array-face ((t (:inherit font-lock-variable-name-face))))
+ '(cperl-hash-face ((t (:inherit font-lock-variable-face-name))))
+ '(fixmee-notice-face ((t (:foreground "yellow" :weight bold))))
+ '(ido-first-match ((t (:underline nil :weight bold))))
+ '(show-paren-match ((t (:background "SteelBlue4")))))
