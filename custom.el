@@ -3,6 +3,8 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(ansi-color-faces-vector
+   [default default default italic underline success warning error])
  '(cperl-auto-newline-after-colon t)
  '(cperl-close-paren-offset 0)
  '(cperl-continued-statement-offset 4)
@@ -12,7 +14,7 @@
  '(cperl-hairy t)
  '(cperl-highlight-variables-indiscriminately t)
  '(cperl-indent-parens-as-block t)
- '(cua-keep-region-after-copy t)
+ '(cua-keep-region-after-copy nil)
  '(cua-mode t nil (cua-base))
  '(cua-remap-control-v t)
  '(cua-remap-control-z t)
@@ -31,6 +33,9 @@
  '(haskell-notify-p t)
  '(haskell-process-args-cabal-repl (quote ("--ghc-option=-ferror-spans")))
  '(haskell-process-args-ghci (quote ("-ferror-spans")))
+ '(haskell-process-args-stack-ghci
+   (quote
+    ("--ghc-options=-ferror-spans --ghc-options=-fno-warn-unused-do-bind")))
  '(haskell-process-auto-import-loaded-modules t)
  '(haskell-process-log t)
  '(haskell-process-reload-with-fbytecode nil)
@@ -41,12 +46,16 @@
  '(hindent-style "chris-done")
  '(ido-buffer-disable-smart-matches nil)
  '(ido-mode (quote both) nil (ido))
+ '(make-backup-files nil)
+ '(projectile-global-mode t)
  '(projectile-mode-line (quote (:eval (format " P[%s]" (projectile-project-name)))))
  '(shm-auto-insert-bangs t)
  '(shm-auto-insert-skeletons t)
  '(shm-use-presentation-mode t)
  '(show-paren-mode t)
  '(show-paren-style (quote expression))
+ '(stack-mode-print-error-messages t)
+ '(stack-mode-show-popup t)
  '(tab-width 4)
  '(whitespace-style (quote (face trailing space-before-tab empty)))
  '(x-stretch-cursor t))
@@ -55,8 +64,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(default ((t (:inherit nil :stipple nil :background "#242424" :foreground "#f6f3e8" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 120 :width normal :foundry "nil" :family "Menlo"))))
  '(cperl-array-face ((t (:inherit font-lock-variable-name-face))))
  '(cperl-hash-face ((t (:inherit font-lock-variable-face-name))))
  '(fixmee-notice-face ((t (:foreground "yellow" :weight bold))))
  '(ido-first-match ((t (:underline nil :weight bold))))
- '(show-paren-match ((t (:background "SteelBlue4")))))
+ '(show-paren-match ((t (:background "black")))))
