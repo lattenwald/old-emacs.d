@@ -80,7 +80,7 @@
  ;; If there is more than one, they won't work right.
  '(default ((t (:inherit nil :stipple nil :background "#242424" :foreground "#f6f3e8" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 120 :width normal :foundry "nil" :family "Menlo"))))
  '(cperl-array-face ((t (:inherit font-lock-variable-name-face))))
- '(cperl-hash-face ((t (:inherit font-lock-variable-face-name))))
+ '(cperl-hash-face ((t (:inherit font-lock-variable-name-face))))
  '(fixmee-notice-face ((t (:foreground "yellow" :weight bold))))
  '(ido-first-match ((t (:underline nil :weight bold))))
  '(show-paren-match ((t (:background "black")))))
