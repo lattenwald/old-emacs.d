@@ -64,3 +64,9 @@
 [submodule "packages/ghc-mod"]
 	path = packages/ghc-mod
 	url = git@github.com:kazu-yamamoto/ghc-mod.git
+[submodule "packages/structured-haskell-mode"]
+	path = packages/structured-haskell-mode
+	url = git@github.com:chrisdone/structured-haskell-mode.git
+[submodule "packages/undo-tree"]
+	path = packages/undo-tree
+	url = http://www.dr-qubit.org/git/undo-tree.git

@@ -12,7 +12,7 @@
      ;; packages
      ag company company-ghc cperl-mode exec-path-from-shell
      fixmee flycheck haskell-mode helm helm-ag idomenu
-     projectile smart-tabs-mode smex sunrise-commander
+     projectile smart-tabs-mode smex sunrise-commander undo-tree
      )
   "Packages whose location follows the
   packages/package-name/package-name.el format.")
@@ -20,7 +20,8 @@
 (defvar custom-load-paths
   '("stack-ide/stack-mode"
     "magit/lisp"
-    "ghc-mod/elisp")
+    "ghc-mod/elisp"
+    "structured-haskell-mode/elisp")
   "Custom load paths that don't follow the normal
   package-name/module-name.el format.")
 

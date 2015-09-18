@@ -48,6 +48,9 @@
 (require 'magit)
 ;;; XXX autoloads?
 
+;;; undo tree
+(require 'undo-tree)
+
 ;;; Misc customizations
 (setq-default cua-mode t)
 (setq-default ido-everywhere t)
@@ -72,6 +75,8 @@
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)
 (global-set-key (kbd "C-c M-x") 'execute-extended-command)
 (global-set-key (kbd "C-z") 'undo)
+(global-set-key (kbd "M-[") 'align)
+(global-set-key (kbd "C-c =") 'magit-status)
 
 ;;; Moving between windows
 (global-set-key (kbd "M-<left>") 'windmove-left)
