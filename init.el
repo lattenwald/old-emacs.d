@@ -11,7 +11,7 @@
 
      ;; packages
      ag company company-ghc cperl-mode exec-path-from-shell
-     fixmee flycheck haskell-mode helm helm-ag idomenu
+     fixmee flx-ido flycheck haskell-mode helm helm-ag idomenu
      projectile smart-tabs-mode smex sunrise-commander undo-tree
      )
   "Packages whose location follows the

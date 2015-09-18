@@ -51,9 +51,17 @@
 ;;; undo tree
 (require 'undo-tree)
 
+;;; ido
+(require 'flx-ido)
+(ido-mode 1)
+(ido-everywhere 1)
+(flx-ido-mode 1)
+;; disable ido faces to see flx highlights.
+(setq ido-enable-flex-matching t)
+(setq ido-use-faces nil)
+
 ;;; Misc customizations
 (setq-default cua-mode t)
-(setq-default ido-everywhere t)
 (setq-default inhibit-startup-screen t)
 (setq-default require-final-newline t)
 (setq-default ns-command-modifier 'meta)
