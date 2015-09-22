@@ -34,7 +34,7 @@
 (tool-bar-mode 0)
 (column-number-mode t)
 
-;;; tabs
+;;; smart tabs/spaces indentation
 (setq-default indent-tabs-mode nil)
 (autoload 'smart-tabs-mode "smart-tabs-mode")
 (autoload 'smart-tabs-mode-enable "smart-tabs-mode")
@@ -51,6 +51,10 @@
 ;;; undo tree
 (require 'undo-tree)
 (global-set-key (kbd "C-r") 'undo-tree-redo)
+
+;;; multi-term terminal
+(require 'multi-term)
+(setq multi-term-program "zsh")
 
 ;;; ido
 (require 'flx-ido)

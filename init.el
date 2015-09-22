@@ -11,7 +11,7 @@
 
      ;; packages
      ag company company-ghc cperl-mode exec-path-from-shell
-     fixmee flx-ido flycheck haskell-mode helm helm-ag idomenu
+     fixmee flx-ido flycheck haskell-mode helm helm-ag idomenu multi-term
      projectile smart-tabs-mode smex sunrise-commander undo-tree
      weechat
      )
