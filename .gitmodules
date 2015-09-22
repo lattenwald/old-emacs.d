@@ -73,3 +73,6 @@
 [submodule "packages/flx-ido"]
 	path = packages/flx-ido
 	url = git@github.com:lewang/flx.git
+[submodule "packages/weechat"]
+	path = packages/weechat
+	url = git@github.com:the-kenny/weechat.el.git

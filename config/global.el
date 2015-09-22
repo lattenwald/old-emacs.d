@@ -50,6 +50,7 @@
 
 ;;; undo tree
 (require 'undo-tree)
+(global-set-key (kbd "C-r") 'undo-tree-redo)
 
 ;;; ido
 (require 'flx-ido)

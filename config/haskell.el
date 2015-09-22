@@ -5,14 +5,19 @@
 (require 'shm)
 (require 'stack-mode)
 
-(add-hook 'haskell-mode-hook 'haskell-indentation-mode)
-(add-hook 'haskell-mode-hook 'interactive-haskell-mode)
-(add-hook 'haskell-mode-hook 'structured-haskell-mode)
-(add-hook 'haskell-mode-hook 'stack-mode)
+(add-hook 'haskell-mode-hook
+          (lambda nil
+            (haskell-indentation-mode)
+            (stack-mode)
+            (interactive-haskell-mode)
+            (structured-haskell-mode)))
 
-(eval-after-load "structured-haskell-mode"
-  '(progn
-     (define-key shm-map (kbd "RET") 'shm/newline-indent)))
+(add-hook 'structured-haskell-mode-hook
+          (lambda nil
+            (define-key shm-map (kbd "RET") 'shm/newline-indent-proxy)
+            (define-key shm-map (kbd "C-j") 'shm/newline-indent)
+            (define-key shm-map (kbd "DEL") nil)
+            (define-key shm-map (kbd "<deletechar>") nil)))
 
 (eval-after-load "stack-mode"
   '(progn

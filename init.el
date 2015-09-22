@@ -13,6 +13,7 @@
      ag company company-ghc cperl-mode exec-path-from-shell
      fixmee flx-ido flycheck haskell-mode helm helm-ag idomenu
      projectile smart-tabs-mode smex sunrise-commander undo-tree
+     weechat
      )
   "Packages whose location follows the
   packages/package-name/package-name.el format.")

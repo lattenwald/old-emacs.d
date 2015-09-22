@@ -35,6 +35,7 @@
  '(haskell-interactive-mode-eval-mode (quote haskell-mode))
  '(haskell-interactive-mode-eval-pretty nil)
  '(haskell-interactive-mode-include-file-name nil)
+ '(haskell-interactive-popup-errors nil)
  '(haskell-notify-p t)
  '(haskell-process-args-cabal-repl (quote ("--ghc-option=-ferror-spans")))
  '(haskell-process-args-ghci (quote ("-ferror-spans")))
@@ -58,7 +59,7 @@
  '(projectile-mode-line (quote (:eval (format " P[%s]" (projectile-project-name)))))
  '(shm-auto-insert-bangs t)
  '(shm-auto-insert-skeletons t)
- '(shm-indent-point-after-adding-where-clause t)
+ '(shm-lambda-indent-style (quote leftmost-parent))
  '(shm-pragmas
    (quote
     ("LANGUAGE" "OPTIONS_GHC" "INCLUDE" "DEPRECATED" "WARNING" "INLINE" "NOINLINE" "INLINABLE" "CONLIKE" "LINE" "RULES" "SPECIALIZE" "UNPACK" "SOURCE" "SCC" "MINIMAL" "OVERLAPPING" "OVERLAPPABLE")))
@@ -71,6 +72,7 @@
  '(stack-mode-show-popup t)
  '(tab-width 4)
  '(undo-tree-enable-undo-in-region nil)
+ '(weechat-host-default "lattenwald.org")
  '(whitespace-style (quote (face trailing space-before-tab empty)))
  '(x-stretch-cursor t))
 (custom-set-faces
