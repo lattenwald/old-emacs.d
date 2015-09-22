@@ -2,12 +2,14 @@
 (require 'haskell-mode)
 (require 'haskell-indentation)
 (require 'haskell-font-lock)
+(require 'haskell-decl-scan)
 (require 'shm)
 (require 'stack-mode)
 
 (add-hook 'haskell-mode-hook
           (lambda nil
             (haskell-indentation-mode)
+            (haskell-decl-scan-mode)
             (stack-mode)
             (interactive-haskell-mode)
             (structured-haskell-mode)))
