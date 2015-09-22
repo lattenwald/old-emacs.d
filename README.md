@@ -1,5 +1,5 @@
 # .emacs.d
-Personal Emacs configuration used primarily for woking with Perl and Haskell projects. Dependencies are pulled in as submodules.
+Personal Emacs configuration used primarily for working with Perl and Haskell projects. Dependencies are pulled in as submodules.
 
 ## git hooks
 Is is adviced to put following into the git `post-merge` hook
