@@ -97,7 +97,11 @@
 (global-set-key (kbd "M-<up>") 'windmove-up)
 (global-set-key (kbd "M-<down>") 'windmove-down)
 
+;;; fixmee-mode
+(setq-default fixmee--listview-local-only t)
+
 ;;; align
+(require 'align)
 (add-to-list 'align-rules-list
              '(haskell-types
                (regexp . "\\(\\s-+\\)\\(::\\|∷\\)\\s-+")
