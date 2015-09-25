@@ -11,9 +11,9 @@
 
      ;; packages
      ag company company-ghc cperl-mode exec-path-from-shell
-     fixmee flx-ido flycheck haskell-mode helm helm-ag idomenu multi-term
-     projectile smart-tabs-mode smex sunrise-commander undo-tree
-     weechat
+     fixmee flx-ido flycheck haskell-mode helm helm-ag idomenu
+     multi-term projectile smart-tabs-mode smex sunrise-commander
+     sr-speedbar undo-tree weechat yaml-mode
      )
   "Packages whose location follows the
   packages/package-name/package-name.el format.")
@@ -22,7 +22,8 @@
   '("stack-ide/stack-mode"
     "magit/lisp"
     "ghc-mod/elisp"
-    "structured-haskell-mode/elisp")
+    "structured-haskell-mode/elisp"
+    "hindent/elisp")
   "Custom load paths that don't follow the normal
   package-name/module-name.el format.")
 

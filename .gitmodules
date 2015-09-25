@@ -79,3 +79,12 @@
 [submodule "packages/multi-term"]
 	path = packages/multi-term
 	url = https://github.com/emacsmirror/multi-term
+[submodule "packages/hindent"]
+	path = packages/hindent
+	url = https://github.com/chrisdone/hindent
+[submodule "packages/sr-speedbar"]
+	path = packages/sr-speedbar
+	url = git@github.com:emacsmirror/sr-speedbar.git
+[submodule "packages/yaml-mode"]
+	path = packages/yaml-mode
+	url = git@github.com:yoshiki/yaml-mode.git

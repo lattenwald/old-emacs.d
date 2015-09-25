@@ -100,6 +100,11 @@
 ;;; fixmee-mode
 (setq-default fixmee--listview-local-only t)
 
+
+;;; sr-speedbar
+(require 'sr-speedbar)
+(global-set-key (kbd "<f11>") 'sr-speedbar-toggle)
+
 ;;; align
 (require 'align)
 (add-to-list 'align-rules-list

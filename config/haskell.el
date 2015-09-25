@@ -1,6 +1,8 @@
 (require 'haskell)
 (require 'haskell-mode)
 (require 'haskell-indentation)
+;; (require 'haskell-simple-indent)
+(require 'hindent)
 (require 'haskell-font-lock)
 (require 'haskell-decl-scan)
 (require 'shm)
@@ -8,7 +10,9 @@
 
 (add-hook 'haskell-mode-hook
           (lambda nil
-            (haskell-indentation-mode)
+            (turn-on-haskell-indentation)
+            ;; (turn-on-haskell-simple-indent)
+            (hindent-mode)
             (haskell-decl-scan-mode)
             (stack-mode)
             (interactive-haskell-mode)
@@ -23,5 +27,5 @@
 
 (eval-after-load "stack-mode"
   '(progn
-     (define-key stack-mode-map (kbd "C-c C-l") nil)
-     (define-key stack-mode-map (kbd "C-c C-r") 'stack-mode-load)))
+     (define-key stack-mode-map (kbd "C-c C-t") nil)
+     (define-key stack-mode-map (kbd "C-f") 'stack-mode-type)))
