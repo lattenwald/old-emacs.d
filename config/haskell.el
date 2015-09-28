@@ -8,6 +8,8 @@
 (require 'shm)
 (require 'stack-mode)
 
+(speedbar-add-supported-extension ".hs")
+
 (add-hook 'haskell-mode-hook
           (lambda nil
             (turn-on-haskell-indentation)
@@ -27,5 +29,7 @@
 
 (eval-after-load "stack-mode"
   '(progn
+     (define-key stack-mode-map (kbd "C-c C-l") nil)
      (define-key stack-mode-map (kbd "C-c C-t") nil)
+     (define-key stack-mode-map (kbd "C-c C-r") 'stack-mode-load-module)
      (define-key stack-mode-map (kbd "C-f") 'stack-mode-type)))
