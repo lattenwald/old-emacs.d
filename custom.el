@@ -28,8 +28,10 @@
  '(gc-cons-threshold 20000000)
  '(global-company-mode t)
  '(global-fixmee-mode t)
+ '(global-linum-mode t)
  '(global-undo-tree-mode t)
  '(global-whitespace-mode t)
+ '(haskell-ask-also-kill-buffers nil)
  '(haskell-complete-module-preferred
    (quote
     ("Data.ByteString" "Data.ByteString.Lazy" "Data.Conduit" "Data.Function" "Data.List" "Data.Map" "Data.Maybe" "Data.Monoid" "Data.Ord")))
@@ -40,15 +42,13 @@
  '(haskell-notify-p t)
  '(haskell-process-args-cabal-repl (quote ("--ghc-option=-ferror-spans")))
  '(haskell-process-args-ghci (quote ("-ferror-spans")))
- '(haskell-process-args-stack-ghci
-   (quote
-    ("--ghc-options=-ferror-spans --ghc-options=-fno-warn-unused-do-bind")))
+ '(haskell-process-args-stack-ghci (quote ("--ghc-options=-ferror-spans")))
  '(haskell-process-auto-import-loaded-modules t)
  '(haskell-process-log t)
  '(haskell-process-reload-with-fbytecode nil)
  '(haskell-process-suggest-haskell-docs-imports t)
  '(haskell-process-suggest-remove-import-lines t)
- '(haskell-process-type (quote cabal-repl))
+ '(haskell-process-type (quote stack-ghci))
  '(haskell-process-use-presentation-mode t)
  '(haskell-tags-on-save t)
  '(hindent-style "chris-done")
@@ -79,6 +79,7 @@
  '(term-default-bg-color "black")
  '(term-default-fg-color "yellow")
  '(term-unbind-key-list (quote ("C-z" "C-x" "C-c" "C-h" "C-y" "<ESC>" "<tab>")))
+ '(tramp-encoding-shell "/bin/zsh")
  '(undo-tree-enable-undo-in-region nil)
  '(weechat-host-default "lattenwald.org")
  '(whitespace-style (quote (face trailing space-before-tab empty)))
