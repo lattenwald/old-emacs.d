@@ -7,13 +7,13 @@
 
 (defvar packages
   '( ;;libraries
-     dash s let-alist button-lock
+     dash s let-alist button-lock powerline
 
      ;; packages
-     ag company company-ghc cperl-mode exec-path-from-shell
+     ag company company-ghc cperl-mode exec-path-from-shell diminish
      fixmee flx-ido flycheck haskell-mode helm helm-ag idomenu
-     multi-term projectile smart-tabs-mode smex sunrise-commander
-     sr-speedbar undo-tree weechat yaml-mode
+     multi-term projectile smart-tabs-mode smex spaceline
+     sunrise-commander sr-speedbar undo-tree weechat yaml-mode
      )
   "Packages whose location follows the
   packages/package-name/package-name.el format.")

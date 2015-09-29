@@ -50,7 +50,6 @@
  '(haskell-process-suggest-remove-import-lines t)
  '(haskell-process-type (quote stack-ghci))
  '(haskell-process-use-presentation-mode t)
- '(haskell-tags-on-save t)
  '(hindent-style "chris-done")
  '(ido-buffer-disable-smart-matches nil)
  '(ido-enable-flex-matching t)

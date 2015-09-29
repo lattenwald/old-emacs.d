@@ -130,3 +130,18 @@
 (exec-path-from-shell-initialize)
 
 (provide 'global)
+
+;;; status line
+(require 'spaceline)
+(require 'spaceline-config)
+(setq powerline-height 20)
+(spaceline-emacs-theme)
+(setq ns-use-srgb-colorspace nil)
+(diminish 'company-mode)
+(diminish 'fixmee-mode)
+(diminish 'global-whitespace-mode)
+(diminish 'undo-tree-mode)
+(diminish 'button-lock-mode)
+(diminish 'hindent-mode)
+(diminish 'interactive-haskell-mode)
+(diminish 'abbrev-mode)

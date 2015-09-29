@@ -88,3 +88,12 @@
 [submodule "packages/yaml-mode"]
 	path = packages/yaml-mode
 	url = git@github.com:yoshiki/yaml-mode.git
+[submodule "packages/spaceline"]
+	path = packages/spaceline
+	url = git@github.com:TheBB/spaceline.git
+[submodule "packages/powerline"]
+	path = packages/powerline
+	url = git@github.com:milkypostman/powerline.git
+[submodule "packages/diminish"]
+	path = packages/diminish
+	url = git@github.com:emacsmirror/diminish.git
