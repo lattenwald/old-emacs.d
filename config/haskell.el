@@ -1,7 +1,6 @@
 (require 'haskell)
 (require 'haskell-mode)
 (require 'haskell-indentation)
-;; (require 'haskell-simple-indent)
 (require 'hindent)
 (require 'haskell-font-lock)
 (require 'haskell-decl-scan)
@@ -13,12 +12,14 @@
 (add-hook 'haskell-mode-hook
           (lambda nil
             (turn-on-haskell-indentation)
-            ;; (turn-on-haskell-simple-indent)
             (hindent-mode)
             (haskell-decl-scan-mode)
             (stack-mode)
             (interactive-haskell-mode)
             (structured-haskell-mode)))
+
+(add-hook 'hindent-mode (diminish 'hindent-mode))
+(add-hook 'interactive-haskell-mode (diminish 'interactive-haskell-mode))
 
 (add-hook 'structured-haskell-mode-hook
           (lambda nil

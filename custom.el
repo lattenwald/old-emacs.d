@@ -5,6 +5,7 @@
  ;; If there is more than one, they won't work right.
  '(ansi-color-faces-vector
    [default default default italic underline success warning error])
+ '(company-idle-delay 0.15)
  '(cperl-auto-newline-after-colon t)
  '(cperl-close-paren-offset 0)
  '(cperl-continued-statement-offset 4)
