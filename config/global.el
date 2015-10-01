@@ -129,7 +129,10 @@
 (server-start)
 (exec-path-from-shell-initialize)
 
-(provide 'global)
+;;; ledger mode
+(autoload 'ledger-mode "ledger-mode" "A major mode for Ledger" t)
+(add-to-list 'auto-mode-alist '("\\.ledger$" . ledger-mode))
+(add-to-list 'auto-mode-alist '("ledger.journal$" . ledger-mode))
 
 ;;; status line
 (require 'spaceline)
@@ -143,3 +146,6 @@
 (add-hook 'undo-tree-mode (diminish 'undo-tree-mode))
 (add-hook 'button-lock-mode (diminish 'button-lock-mode))
 (add-hook 'abbrev-mode (diminish 'abbrev-mode))
+
+
+(provide 'global)

@@ -23,7 +23,8 @@
     "magit/lisp"
     "ghc-mod/elisp"
     "structured-haskell-mode/elisp"
-    "hindent/elisp")
+    "hindent/elisp"
+    "ledger/lisp")
   "Custom load paths that don't follow the normal
   package-name/module-name.el format.")
 
@@ -56,3 +57,4 @@
                           "config/"
                           name ".el")))
 (put 'dired-find-alternate-file 'disabled nil)
+(put 'downcase-region 'disabled nil)
