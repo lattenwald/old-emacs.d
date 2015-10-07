@@ -9,3 +9,5 @@ Is is adviced to put following into the git `post-merge` hook
     echo "Done."
 
 Or you might just `C-u 0 M-x byte-recompile-directory` `~/.emacs.d/packages` in Emacs.
+
+Actually, there's shell script `recompile.sh` that when run from `~/.emacs.d/` directory will find all byte-compuled elisp files, remove them and byte-recompile packages directory.
