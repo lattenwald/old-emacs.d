@@ -134,6 +134,10 @@
 (add-to-list 'auto-mode-alist '("\\.ledger$" . ledger-mode))
 (add-to-list 'auto-mode-alist '("ledger.journal$" . ledger-mode))
 
+;;; vimish-fold
+(global-set-key (kbd "C-c C-s") 'vimish-fold)
+(global-set-key (kbd "C-c C-d") 'vimish-fold-delete)
+
 ;;; status line
 (require 'spaceline)
 (require 'spaceline-config)
