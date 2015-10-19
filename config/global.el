@@ -2,8 +2,7 @@
 (defun set-auto-saves ()
   "Put autosave files (ie #foo#) in one place, *not*
  scattered all over the file system!"
-  (defvar autosave-dir
-    (concat "/tmp/emacs_autosaves/" (user-login-name) "/"))
+  (defvar autosave-dir "~/.emacs.d/autosaves/")
 
   (make-directory autosave-dir t)
 
@@ -90,6 +89,8 @@
 (global-set-key (kbd "C-z") 'undo)
 (global-set-key (kbd "M-[") 'align)
 (global-set-key (kbd "C-c =") 'magit-status)
+(global-set-key (kbd "C-a") 'isearch-backward)
+(global-set-key (kbd "C-M-a") 'isearch-backward)
 
 ;;; Moving between windows
 (global-set-key (kbd "M-<left>") 'windmove-left)
@@ -151,5 +152,19 @@
 (add-hook 'button-lock-mode (diminish 'button-lock-mode))
 (add-hook 'abbrev-mode (diminish 'abbrev-mode))
 
+
+;;; org-mode
+(eval-after-load "org"
+  '(progn
+     (define-key org-mode-map (kbd "<M-left>") nil)
+     (define-key org-mode-map (kbd "<M-right>") nil)
+     (define-key org-mode-map (kbd "<M-up>") nil)
+     (define-key org-mode-map (kbd "<M-down>") nil)
+     (define-key org-mode-map (kbd "<C-M-left>") 'org-metaleft)
+     (define-key org-mode-map (kbd "<C-M-right>") 'org-metaright)
+     (define-key org-mode-map (kbd "<C-M-up>") 'org-metaup)
+     (define-key org-mode-map (kbd "<C-M-down>") 'org-metadown)
+     (define-key org-mode-map (kbd "<C-M-return>") 'org-insert-heading)
+     ))
 
 (provide 'global)

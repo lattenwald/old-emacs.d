@@ -5,6 +5,8 @@
  ;; If there is more than one, they won't work right.
  '(ansi-color-faces-vector
    [default default default italic underline success warning error])
+ '(backup-by-copying t)
+ '(backup-directory-alist (quote (("." . "~/.emacs.d/backups"))))
  '(company-idle-delay 0.15)
  '(cperl-auto-newline-after-colon t)
  '(cperl-close-paren-offset 0)
@@ -22,6 +24,7 @@
  '(custom-safe-themes
    (quote
     ("73abbe794b6467bbf6a9f04867da0befa604a072b38012039e8c1ba730e5f7a5" "8eaa3bce3c618cd81a318fcf2d28c1cd21278531f028feb53186f6387547dfb4" "a4f8d45297894ffdd98738551505a336a7b3096605b467da83fae00f53b13f01" "af9761c65a81bd14ee3f32bc2ffc966000f57e0c9d31e392bc011504674c07d6" default)))
+ '(delete-old-versions t)
  '(dired-listing-switches "-al --group-directories-first")
  '(electric-pair-mode t)
  '(flx-ido-mode t)
@@ -58,6 +61,7 @@
  '(ido-enable-flex-matching t)
  '(ido-mode (quote both) nil (ido))
  '(ido-use-faces nil)
+ '(kept-new-versions 6)
  '(ledger-binary-path "hledger")
  '(ledger-init-file-name nil)
  '(ledger-mode-should-check-version nil)
@@ -98,6 +102,8 @@
  '(term-unbind-key-list (quote ("C-z" "C-x" "C-c" "C-h" "C-y" "<ESC>" "<tab>")))
  '(tramp-use-ssh-controlmaster-options nil)
  '(undo-tree-enable-undo-in-region nil)
+ '(vc-make-backup-files nil)
+ '(version-control t)
  '(vimish-fold-global-mode t)
  '(weechat-host-default "lattenwald.org")
  '(whitespace-style (quote (face trailing space-before-tab empty)))
