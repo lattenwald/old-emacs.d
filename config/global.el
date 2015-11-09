@@ -152,6 +152,10 @@
 (add-hook 'button-lock-mode (diminish 'button-lock-mode))
 (add-hook 'abbrev-mode (diminish 'abbrev-mode))
 
+;;; ESS (R)
+(require 'ess-site)
+(eval-after-load "ess-mode" (define-key ess-mode-map (kbd "_") nil))
+(eval-after-load "inferior-ess-mode" (define-key inferior-ess-mode-map (kbd "_") nil))
 
 ;;; org-mode
 (eval-after-load "org"

@@ -26,7 +26,9 @@
     "ghc-mod/elisp"
     "structured-haskell-mode/elisp"
     "hindent/elisp"
-    "ledger/lisp")
+    "ledger/lisp"
+    "ESS"
+    "ESS/lisp")
   "Custom load paths that don't follow the normal
   package-name/module-name.el format.")
 

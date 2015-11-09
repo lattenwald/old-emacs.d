@@ -115,3 +115,6 @@
 [submodule "packages/docker"]
 	path = packages/docker
 	url = git@github.com:Silex/docker.el.git
+[submodule "packages/ESS"]
+	path = packages/ESS
+	url = git@github.com:emacs-ess/ESS.git
