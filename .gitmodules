@@ -118,3 +118,6 @@
 [submodule "packages/ESS"]
 	path = packages/ESS
 	url = git@github.com:emacs-ess/ESS.git
+[submodule "packages/seq"]
+	path = packages/seq
+	url = git@github.com:NicolasPetton/seq.el.git

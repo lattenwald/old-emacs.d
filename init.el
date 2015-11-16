@@ -7,7 +7,7 @@
 
 (defvar packages
   '( ;;libraries
-     dash s f let-alist button-lock powerline
+     dash s seq f let-alist button-lock powerline
 
      ;; packages
      ag company company-ghc cperl-mode exec-path-from-shell diminish
