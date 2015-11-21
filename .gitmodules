@@ -121,3 +121,6 @@
 [submodule "packages/seq"]
 	path = packages/seq
 	url = git@github.com:NicolasPetton/seq.el.git
+[submodule "packages/elm-mode"]
+	path = packages/elm-mode
+	url = git@github.com:jcollard/elm-mode.git

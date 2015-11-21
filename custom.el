@@ -27,6 +27,12 @@
  '(delete-old-versions t)
  '(dired-listing-switches "-al --group-directories-first")
  '(electric-pair-mode t)
+ '(elm-indent-after-keywords
+   (quote
+    (("of" 2)
+     ("in" 2 0)
+     ("{" 2)
+     "if" "then" "else" "let" "type")))
  '(flx-ido-mode t)
  '(flycheck-check-syntax-automatically (quote (save mode-enabled)))
  '(flycheck-completion-system (quote ido))
