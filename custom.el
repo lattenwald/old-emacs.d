@@ -80,6 +80,7 @@
      ("account" "ledger -f %(ledger-file) reg %(account)")
      ("totals" "ledger -f %(ledger-file) reg -Pr %(account)")
      ("reg2" "ledger -f %(ledger-file) reg -r %(account)"))))
+ '(lua-indent-level 4)
  '(make-backup-files nil)
  '(max-lisp-eval-depth 3000)
  '(max-specpdl-size 6000)

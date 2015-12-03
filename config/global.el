@@ -43,6 +43,10 @@
                              (smart-tabs-insinuate
                               'c 'javascript 'cperl 'python 'ruby)))
 
+(add-hook 'lua-mode-hook (lambda nil
+                           (smart-tabs-mode-enable)
+                           (smart-tabs-advice lua-indent-line lua-indent-level)))
+
 ;;; magit
 (require 'magit)
 ;;; XXX autoloads?
