@@ -14,7 +14,7 @@
      diminish dockerfile-mode docker fixmee flx-ido flycheck go-mode
      haskell-mode helm helm-ag idomenu lua-mode multi-term projectile
      smart-tabs-mode smex spaceline sunrise-commander sr-speedbar
-     undo-tree vimish-fold weechat yaml-mode
+     undo-tree vimish-fold web-mode weechat yaml-mode
      )
   "Packages whose location follows the
   packages/package-name/package-name.el format.")

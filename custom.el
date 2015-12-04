@@ -86,6 +86,9 @@
  '(max-specpdl-size 6000)
  '(org-support-shift-select t)
  '(projectile-global-mode t)
+ '(projectile-globally-ignored-directories
+   (quote
+    (".idea" ".eunit" ".git" ".hg" ".fslckout" ".bzr" "_darcs" ".tox" ".svn" ".stack-work" "elm-stuff")))
  '(projectile-mode-line (quote (:eval (format " P[%s]" (projectile-project-name)))))
  '(shm-auto-insert-bangs t)
  '(shm-auto-insert-skeletons t)
