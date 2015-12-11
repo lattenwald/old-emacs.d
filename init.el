@@ -34,7 +34,8 @@
 (defvar configs
   '("global"
     "haskell"
-    "perl")
+    "perl"
+    "react")
   "Configuration files that follow the config/foo.el file path
   format.")
 
