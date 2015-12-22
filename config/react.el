@@ -1,9 +1,10 @@
-;; see https://gist.github.com/sabof/4941970
 (defvar react--beginning-of-class-re
   "\\(\\_<[^\s-]+?\\_>\\)\s-*=\s-*React\\.createClass")
 
 (defun react-imenu-create-index ()
-  "Return an imenu index for the current buffer"
+  "Return an imenu index for the current buffer
+
+Stolen from https://gist.github.com/sabof/4941970"
   (save-excursion
     (save-restriction
       (let
@@ -33,7 +34,9 @@
 With argument, do it that many times.  Negative arg -N
 means move forward to Nth following beginning of proc.
 
-Returns t unless search stops due to beginning or end of buffer."
+Returns t unless search stops due to beginning or end of buffer.
+
+Stolen from lua-mode"
   (interactive "P")
   (or arg (setq arg 1))
 
@@ -53,7 +56,9 @@ Returns t unless search stops due to beginning or end of buffer."
 With argument, do it that many times.  Negative argument -N means move
 back to Nth preceding end of proc.
 
-This function just searches for a `});' at the beginning of a line."
+This function just searches for a `});' at the beginning of a line.
+
+Stolen from lua-mode"
   (interactive "P")
   (or arg (setq arg 1))
   (let ((found nil)
