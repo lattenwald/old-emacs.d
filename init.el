@@ -7,7 +7,7 @@
 
 (defvar packages
   '( ;;libraries
-     dash s seq f let-alist button-lock powerline
+     dash s seq f button-lock let-alist powerline
 
      ;; packages
      ag company company-ghc cperl-mode elm-mode exec-path-from-shell
@@ -27,7 +27,8 @@
     "hindent/elisp"
     "ledger/lisp"
     "ESS"
-    "ESS/lisp")
+    "ESS/lisp"
+    "misc")
   "Custom load paths that don't follow the normal
   package-name/module-name.el format.")
 
