@@ -130,3 +130,6 @@
 [submodule "packages/web-mode"]
 	path = packages/web-mode
 	url = git@github.com:fxbois/web-mode.git
+[submodule "packages/purescript-mode"]
+	path = packages/purescript-mode
+	url = git@github.com:dysinger/purescript-mode.git

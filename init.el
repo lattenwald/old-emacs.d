@@ -13,8 +13,8 @@
      ag company company-ghc cperl-mode elm-mode exec-path-from-shell
      diminish dockerfile-mode docker fixmee flx-ido flycheck go-mode
      haskell-mode helm helm-ag idomenu lua-mode multi-term projectile
-     smart-tabs-mode smex spaceline sunrise-commander sr-speedbar
-     undo-tree vimish-fold web-mode weechat yaml-mode
+     purescript-mode smart-tabs-mode smex spaceline sunrise-commander
+     sr-speedbar undo-tree vimish-fold web-mode weechat yaml-mode
      )
   "Packages whose location follows the
   packages/package-name/package-name.el format.")

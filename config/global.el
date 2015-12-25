@@ -200,4 +200,6 @@
               (flycheck-select-checker 'jsxhint-checker)
               (flycheck-mode))))
 
+(require 'purescript-mode-autoloads)
+
 (provide 'global)
