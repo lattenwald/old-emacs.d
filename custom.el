@@ -91,6 +91,7 @@
    (quote
     (".idea" ".eunit" ".git" ".hg" ".fslckout" ".bzr" "_darcs" ".tox" ".svn" ".stack-work" "elm-stuff" "node_modules")))
  '(projectile-mode-line (quote (:eval (format " P[%s]" (projectile-project-name)))))
+ '(purescript-mode-hook (quote (turn-on-purescript-indentation)))
  '(shm-auto-insert-bangs t)
  '(shm-auto-insert-skeletons t)
  '(shm-lambda-indent-style (quote leftmost-parent))
